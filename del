@@ -1,4 +1,9 @@
-artix@artix-live /run/media/artix/usb1/linux/ipt
+#!/bin/bash
+#IPv4
+sudo iptables -t filter -P INPUT ACCEPT
+sudo iptables -t filter -P OUTPUT ACCEPT
+sudo iptables -t filter -P FORWARD ACCEPT
+#sudo iptables -t filter -N BLOCK
 sudo iptables -t filter -N ICMP
 sudo iptables -t filter -N TCP
 sudo iptables -t filter -N UDP
